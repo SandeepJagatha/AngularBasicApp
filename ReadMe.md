@@ -1,9 +1,9 @@
 AngularJS Core Feature:
 
-> Directives
-> Data binding
-> Filters
-> Modules
-> Routes
-> Controllers
+Directives
+Data binding
+Filters
+Modules
+Routes
+Controllers
 
