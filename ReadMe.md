@@ -12,7 +12,7 @@
 
 - git config --global color.ui true
 - git config --global core.editor “brackets”
-- git init 
+- git init
 - git add index.html  — to add each file
 - git status
 
@@ -29,7 +29,5 @@
 - git rm about.html — to remove file
 
 - git add --all
-
 - git config --list
-
 - git branch
