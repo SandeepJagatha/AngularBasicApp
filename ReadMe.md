@@ -1,14 +1,35 @@
-AngularJS Core Feature:
+## AngularJS Core Feature:
 
-Directives 
+ - Directives 
+ - Data binding
+ - Filters
+ - Modules
+ - Routes
+ - Controllers
 
-Data binding
 
-Filters
+## Git Commands:
 
-Modules
+- git config --global color.ui true
+- git config --global core.editor “brackets”
+- git init 
+- git add index.html  — to add each file
+- git status
 
-Routes
+- git add . — to add all files
+- git commit -m “message”
 
-Controllers
+- git config --global user.name "Your Name"
+- git config --global user.email "example@unknown.com"
 
+- git log
+- git checkout
+
+- git reset HEAD about.html
+- git rm about.html — to remove file
+
+- git add --all
+
+- git config --list
+
+- git branch
