@@ -1,9 +1,14 @@
 AngularJS Core Feature:
 
-Directives
+Directives 
+
 Data binding
+
 Filters
+
 Modules
+
 Routes
+
 Controllers
 
