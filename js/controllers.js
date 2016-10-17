@@ -26,3 +26,11 @@ artistControllers.controller('DetailsController', ['$scope', '$http', '$routePar
         }
     });
 }]);
+
+artistControllers.controller('RegistrationController', ['$scope', function ($scope) {
+
+    $scope.register = function () {
+        $scope.message = 'Welcome ' + $scope.user.firstname;
+    };
+
+}]);
