@@ -20,15 +20,13 @@
 
 ### Custom event creation:
 
-*If you want to send an event between services/directives use broadcast:*
-==========================================================================
+> *If you want to send an event between services/directives use broadcast:*
 
 ```javascript
  $rootScope.$broadcast('buttonPressedEvent');
 ```
 
-*And recieve it like this*
-===========================
+> *And recieve it like this*
 
 ```javascript
  $rootScope.$on('buttonPressedEvent', function () { 
