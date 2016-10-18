@@ -8,26 +8,30 @@
  - Controllers
 
 
-## Git Commands:
+### AngularJS calling order:
 
-- git config --global color.ui true
-- git config --global core.editor “brackets”
-- git init
-- git add index.html  — to add each file
-- git status
+1. app.config()
+2. app.run()
+3. directive's compile functions (if they are found in the dom)
+4. app.controller()
+5. directive's link functions (again, if found)
 
-- git add . — to add all files
-- git commit -m “message”
+[reference](https://github.com/angular/angular.js/blob/master/docs/content/guide/module.ngdoc)
 
-- git config --global user.name "Your Name"
-- git config --global user.email "example@unknown.com"
+### Custom event creation:
 
-- git log
-- git checkout
+*If you want to send an event between services/directives use broadcast:*
+==========================================================================
 
-- git reset HEAD about.html
-- git rm about.html — to remove file
+```javascript
+ $rootScope.$broadcast('buttonPressedEvent');
+```
 
-- git add --all
-- git config --list
-- git branch
+*And recieve it like this*
+===========================
+
+```javascript
+ $rootScope.$on('buttonPressedEvent', function () { 
+   //do stuff 
+ }):
+```
