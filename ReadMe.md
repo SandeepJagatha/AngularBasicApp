@@ -27,18 +27,18 @@
 > .$emit(name, args) - *Emit an event up the $scope hierarchy to all parents, including the $rootScope*
 
 ```javascript
-// *If you want to send an event between services/directives use broadcast:*
+// If you want to send an event between services/directives use broadcast:
  $rootScope.$broadcast('buttonPressedEvent');
-// *If you want you can pass arguments when you $broadcast:*
+// If you want you can pass arguments when you $broadcast:
 $rootScope.$broadcast('buttonPressedEvent', { any: {} });
 ```
 
 ```javascript
- // *And recieve it like this*
+ // And recieve it like this
  $rootScope.$on('buttonPressedEvent', function () { 
    //do stuff 
  }):
- // *And then receive them with arguments*
+ // And then receive them with arguments
  $scope.$on('buttonPressedEvent', function(event, args) {
     var anyThing = args.any;
     // do what you want to do
