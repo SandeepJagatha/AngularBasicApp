@@ -57,8 +57,13 @@ $rootScope.$broadcast('buttonPressedEvent', { any: {} });
 });
 ```
 
-- The Object.prototype property represents the Object prototype object.
-- prototype is an object from which other objects inherits properties.
+- Call invokes the function and allows you to pass in arguments one by one.
+- Apply invokes the function and allows you to pass in arguments as an array.
+- Bind returns a new function, allowing you to pass in a this array and any number of arguments.
+
+
+- The **Object.prototype** property represents the Object prototype object.
+- **prototype** is an object from which other objects inherits properties.
 - Every JavaScript object has a prototype. The prototype is also an object.
 - All JavaScript objects inherit their properties and methods from their prototype.
 - All JavaScript objects inherit the properties and methods from their prototype.
