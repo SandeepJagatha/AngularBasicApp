@@ -57,4 +57,6 @@ $rootScope.$broadcast('buttonPressedEvent', { any: {} });
 });
 ```
 
+- The Object.prototype property represents the Object prototype object.
+- prototype is an object from which other objects inherits properties.
 
